@@ -116,13 +116,13 @@ function loadConceptList() {
     //Build submenus
     concept.children.forEach((child) => {
       li = document.createElement("li");
-      sp = document.createElement("span");
-      sp.classList.add("sidebar-link");
-      sp.innerText = child[1];
-      sp.setAttribute("concept-name", child[0]);
-      li.appendChild(sp);
+      a = document.createElement("a");
+      a.classList.add("sidebar-link");
+      a.innerText = child[1];
+      a.setAttribute("concept-name", child[0]);
+      li.appendChild(a);
 
-      sp.addEventListener("click", (e) => {
+      a.addEventListener("click", (e) => {
         let choice = child[0];
         if (selectedConcept === choice) {
           clearSelection();
