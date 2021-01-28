@@ -13,6 +13,16 @@ notLanguage = {
   java: "csharp",
   csharp: "java",
 };
+let langs = [
+  {
+    name: "java",
+    title: "Java Vocabulary"
+  },
+  {
+    name: "csharp",
+    title: "C# Vocabulary"
+  }
+]
 let langText = {
   java: "Java",
   csharp: "C#",
@@ -185,6 +195,9 @@ function toggleLang() {
   currentLanguage = newLang;
   localStorage.setItem("languagePref", currentLanguage);
   toggleLangButton(currentLanguage);
+  title = langs[langs.findIndex(x => currentLanguage === x.name)].title;
+  document.querySelector(".site-name").innerText = title;
+  document.title = title;
 }
 
 function toggleLangButton(lang) {
