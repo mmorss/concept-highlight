@@ -189,6 +189,14 @@ aside {
   padding: 0px 10px 0px 10px;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:active, a:hover {
+  text-decoration: underline;
+}
 .top ul {
   padding-right: 0;
   list-style-type: none;

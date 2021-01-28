@@ -118,6 +118,7 @@ function loadConceptList() {
       li = document.createElement("li");
       a = document.createElement("a");
       a.classList.add("sidebar-link");
+      a.setAttribute("href", "#");
       a.innerText = child[1];
       a.setAttribute("concept-name", child[0]);
       li.appendChild(a);
