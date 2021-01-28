@@ -189,9 +189,13 @@ function toggleLang() {
 
 function toggleLangButton(lang) {
   document.querySelector(".lang-btn." + lang).classList.add("selected");
+  document.querySelector(".lang-btn." + lang).classList.remove("deselected");
   document
     .querySelector(".lang-btn." + notLanguage[lang])
     .classList.remove("selected");
+    document
+    .querySelector(".lang-btn." + notLanguage[lang])
+    .classList.add("deselected");
 }
 
 document.addEventListener("readystatechange", () => {

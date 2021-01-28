@@ -138,8 +138,14 @@ header .language-button {
   color: var(--background-color);
   background: var(--text-color);
 }
-.lang-label.selected:hover {
-  background: cornflowerblue;
+
+.lang-label:hover, .lang-btn:hover {
+  text-decoration: none;
+}
+
+.lang-label.deselected:hover, .lang-btn.deselected:hover {
+  background: var(--text-color);
+  color: var(--background-color);
 }
 main {
   height: 90vh;
@@ -170,6 +176,9 @@ aside {
   list-style-type: none;
   padding-inline-start: 1px;
 }
+.sidebar-group {
+  margin-bottom: 5px;
+}
 .sidebar-group-items {
   transition: height 0.1s ease-out;
   font-size: 0.95em;
@@ -180,14 +189,16 @@ aside {
   font-weight: bold;
   width: auto;
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px 0px 2px 0px; 
 }
-.sidebar-links {
-  line-height: 1.1em;
-}
+
+
 .sidebar-link {
-  padding: 0px 10px 0px 10px;
+  padding: 3px 10px 3px 10px;
 }
+.sidebar-link.selected-concept {
+  padding: 3px 10px 3px 10px;
+} 
 
 a:link, a:visited {
   text-decoration: none;
@@ -235,6 +246,8 @@ aside {
   box-shadow: inset 0 0 0 2px var(--outline-color);
   background-color: var(--highlight-color);
 }
+
+
 .block-concept {
   display: inline-block;
 }
