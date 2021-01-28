@@ -38,8 +38,8 @@ html ::-webkit-scrollbar-thumb {
 
 body {
   min-height: 100vh;
-  min-width: 100vh;
-  margin: 0;
+  max-width: 1024px;
+  margin: auto auto;
   display: grid;
   grid-template-rows: 70px auto;
   grid-template-columns: 1fr 1fr 1fr;
