@@ -29,8 +29,8 @@
           </div>
 
           <div class="header-right">
-            <a class="lang-btn java selected" href="#" value="java">Java</a>
-            <a class="lang-btn csharp" href="#" value="csharp">C#</a>
+            <a class="lang-btn java selected" href="#" data-lang="java" data-state="active" value="java">Java</a>
+            <a class="lang-btn csharp" href="#" data-lang="csharp" data-state="inactive" value="csharp">C#</a>
             <label class="theme-switcher">
               <input
                 type="checkbox"
@@ -92,7 +92,7 @@
 }</div></code>
 </pre>
 
-        <pre class="line-numbers language-csharp">
+        <pre class="line-numbers language-csharp hidden">
 <code class="vocab-code">using System;
 <div class="block-concept namespace-block">namespace BookCollection
 {   
