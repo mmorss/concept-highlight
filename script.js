@@ -63,10 +63,8 @@ const concepts = [
       ["array-type", "Array Type"],
       ["element-type", "Element Type"],
       ["array-init", "Array Initialization"],
-      ["array-element", "Array Element"],
-      ["array-index", "Element Index"],
-      ["array-property", "Array Property"],
-      ["shallow-copy", "Shallow Copy"],
+      ["array-index", "Index/Subscript"],
+      ["array-property", "Array Property"]
     ],
   },
   {
@@ -234,7 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTheme(localStorage.getItem("themePref") ?? state.theme);
   loadConceptList();
-  state.concept = getAnchor();
+  //state.concept = getAnchor();
 });
 
 function setTheme(theme) {
