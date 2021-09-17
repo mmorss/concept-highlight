@@ -1,8 +1,8 @@
-# conceptHighlight
+# Concept Highlight
 
 MVP for displaying programming concepts in example code to learners.
 
-![Screenshot](images/conceptHighlight.png)
+![Screenshot](images/concept-highlight.png)
 
 ### Features
 
