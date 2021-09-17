@@ -1,6 +1,9 @@
 # Concept Highlight
 
+
 MVP for displaying programming concepts in example code to learners.
+
+[Preview](https://programming-vocab.netlify.app) on Netlify.
 
 ![Screenshot](images/concept-highlight.png)
 
